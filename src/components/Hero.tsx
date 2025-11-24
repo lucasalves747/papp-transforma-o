@@ -3,7 +3,10 @@ import { Brain, Dumbbell, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20" style={{ background: 'var(--gradient-hero)' }}>
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20"
+      style={{ background: "var(--gradient-hero)" }}
+    >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-2 h-2 bg-accent/40 rounded-full animate-pulse" />
@@ -14,13 +17,6 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        {/* Community Badge */}
-        <div className="flex justify-center mb-8 animate-float">
-          <div className="inline-flex items-center px-6 py-3 rounded-full border-2 border-accent/30 bg-card/50 backdrop-blur-sm">
-            <span className="text-foreground font-medium">Comunidade Betos e Alfredos</span>
-          </div>
-        </div>
-
         {/* Main Headline */}
         <div className="text-center mb-12 space-y-6">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
@@ -28,7 +24,7 @@ const Hero = () => {
             <span className="block text-foreground mb-4">Ative Seu Metabolismo.</span>
             <span className="block text-accent">Volte a Governar Sua Vida.</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             PAPP – Programa Acelerado de 21 Dias para Emagrecimento e Desintoxicação
           </p>
@@ -46,8 +42,8 @@ const Hero = () => {
 
         {/* CTA Button */}
         <div className="flex justify-center mb-16">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground px-12 py-6 text-lg rounded-full font-semibold shadow-lg hover:shadow-accent/50 transition-all duration-300 animate-glow"
           >
             Quero Me Tornar um Homem Melhor
