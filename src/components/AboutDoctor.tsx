@@ -1,3 +1,5 @@
+import drSantiago from "@/assets/dr-santiago.png";
+
 const AboutDoctor = () => {
   return (
     <section className="py-24 px-4 relative" style={{ background: 'var(--gradient-doctor)' }}>
@@ -40,10 +42,12 @@ const AboutDoctor = () => {
           </div>
 
           <div className="order-1 md:order-2">
-            <div className="aspect-[3/4] rounded-2xl border-2 border-accent/30 bg-muted/20 backdrop-blur-sm overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                <span>Foto do Dr. Santiago Vecina</span>
-              </div>
+            <div className="aspect-[3/4] rounded-2xl border-2 border-accent/30 overflow-hidden">
+              <img 
+                src={drSantiago} 
+                alt="Dr. Santiago Vecina - Médico Nutrólogo" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
