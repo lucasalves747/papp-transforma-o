@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Brain, Dumbbell, TrendingUp } from "lucide-react";
+import s from "@/assets/dr-santiago.png"
+import celebro from "@/assets/celebro.png"
 
 const Hero = () => {
   return (
@@ -9,24 +11,85 @@ const Hero = () => {
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-accent/40 rounded-full animate-pulse" />
-        <div className="absolute top-40 right-20 w-1 h-1 bg-accent/30 rounded-full animate-pulse delay-100" />
-        <div className="absolute bottom-40 left-1/4 w-2 h-2 bg-accent/20 rounded-full animate-pulse delay-200" />
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-accent/40 rounded-full animate-pulse delay-300" />
-        <div className="absolute bottom-20 right-10 w-2 h-2 bg-accent/30 rounded-full animate-pulse delay-500" />
+        <div
+          className="absolute left-10 w-2 h-2 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "14s", animationDelay: "0s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-20 w-1 h-1 bg-accent/70 rounded-full animate-float-up"
+          style={{ animationDuration: "10s", animationDelay: "2s", top: "100%" }}
+        />
+
+        <div
+          className="absolute left-1/4 w-2 h-2 bg-accent/60 rounded-full animate-float-up"
+          style={{ animationDuration: "18s", animationDelay: "4s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-1/3 w-1 h-1 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "12s", animationDelay: "1s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-10 w-2 h-2 bg-accent/70 rounded-full animate-float-up"
+          style={{ animationDuration: "14s", animationDelay: "3s", top: "100%" }}
+        />
+
+         <div
+          className="absolute left-10 w-2 h-2 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "15s", animationDelay: "2s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-10 w-1 h-1 bg-accent/70 rounded-full animate-float-up"
+          style={{ animationDuration: "9s", animationDelay: "1s", top: "100%" }}
+        />
+
+        <div
+          className="absolute left-1/3 w-2 h-2 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "11s", animationDelay: "3s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-1/2 w-1 h-1 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "12s", animationDelay: "0s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-20 w-2 h-2 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "16s", animationDelay: "1s", top: "100%" }}
+        />
+
+        <div
+          className="absolute left-1/2 w-2 h-2 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "11s", animationDelay: "3s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-1/5 w-1 h-1 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "12s", animationDelay: "0s", top: "100%" }}
+        />
+
+        <div
+          className="absolute right-20 w-2 h-2 bg-accent/80 rounded-full animate-float-up"
+          style={{ animationDuration: "16s", animationDelay: "1s", top: "100%" }}
+        />
+
       </div>
+
 
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Main Headline */}
         <div className="text-center mb-12 space-y-6">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold leading-tight">
             <span className="block text-foreground mb-4">Recupere Seu Corpo.</span>
             <span className="block text-foreground mb-4">Ative Seu Metabolismo.</span>
             <span className="block text-accent">Volte a Governar Sua Vida.</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            PAPP – Programa Acelerado de 21 Dias para Emagrecimento e Desintoxicação
+            PAPP - Programa Acelerado de 21 Dias para Emagrecimento e Desintoxicação
           </p>
         </div>
 
@@ -77,6 +140,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+
+
     </section>
   );
 };
