@@ -87,7 +87,7 @@ const WhatsIncluded = () => {
                   bg-accent hover:bg-accent/90 
                   text-accent-foreground 
                   px-10 py-5 md:px-12 md:py-6 
-                  text-lg md:text-xl 
+                  text-sm md:text-xl 
                   rounded-full font-bold 
                   shadow-xl hover:shadow-accent/50 
                   transition-all duration-300 

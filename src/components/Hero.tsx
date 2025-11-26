@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Main Headline */}
         <div className="text-center mb-10 md:mb-12 space-y-4 md:space-y-6">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+          <h1 className="text-3xl  sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="block text-foreground mb-2 md:mb-4">
               Recupere Seu Corpo.
             </span>
@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="flex justify-center mb-14 md:mb-16">
           <Button
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-4 md:px-12 md:py-6 text-base md:text-lg rounded-full font-semibold shadow-lg hover:shadow-accent/50 transition-all duration-300 animate-glow"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-4 md:px-12 md:py-6 text-sm md:text-lg rounded-full font-semibold shadow-lg hover:shadow-accent/50 transition-all duration-300 animate-glow"
           >
             Quero Me Tornar uma pessoa melhor
           </Button>
