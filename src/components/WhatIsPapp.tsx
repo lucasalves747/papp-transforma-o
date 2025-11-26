@@ -21,14 +21,14 @@ const WhatIsPapp = () => {
 
   return (
     <section
-      className="py-20 px-4 relative"
+      className="py-20 px-1 relative"
       style={{ background: "var(--gradient-what)" }}
     >
       <div className="container mx-auto max-w-6xl">
 
         {/* TÍTULO PRINCIPAL */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
             O Que É o PAPP?
           </h2>
           <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">

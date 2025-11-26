@@ -18,7 +18,7 @@ const Testimonials = () => {
 
   return (
     <section
-      className="py-20 px-4 relative"
+      className="py-20 px-1 relative"
       style={{ background: "var(--gradient-testimonials)" }}
     >
       <div className="container mx-auto max-w-6xl">

@@ -4,7 +4,7 @@ import { Brain, Dumbbell, TrendingUp } from "lucide-react";
 const Hero = () => {
   return (
     <section
-      className="relative flex items-center justify-center overflow-hidden px-4 py-16 md:py-20"
+      className="relative flex items-center justify-center overflow-hidden px-1 py-16 md:py-20"
       style={{ background: "var(--gradient-hero)" }}
     >
       {/* Animated background elements */}
@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Main Headline */}
         <div className="text-center mb-10 md:mb-12 space-y-4 md:space-y-6">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="block text-foreground mb-2 md:mb-4">
               Recupere Seu Corpo.
             </span>
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
 
         {/* Problem Statement */}
-        <div className="max-w-3xl mx-auto mb-10 md:mb-12 px-2">
+        <div className="max-w-3xl mx-auto mb-10 md:mb-12 ">
           <p className="text-base sm:text-lg md:text-xl text-center text-foreground/90 leading-relaxed">
             Você sente que faz dieta, tenta se controlar, mas seu corpo simplesmente não responde?
           </p>
@@ -46,14 +46,14 @@ const Hero = () => {
         <div className="flex justify-center mb-14 md:mb-16">
           <Button
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 md:px-12 md:py-6 text-base md:text-lg rounded-full font-semibold shadow-lg hover:shadow-accent/50 transition-all duration-300 animate-glow"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-4 md:px-12 md:py-6 text-base md:text-lg rounded-full font-semibold shadow-lg hover:shadow-accent/50 transition-all duration-300 animate-glow"
           >
             Quero Me Tornar uma pessoa melhor
           </Button>
         </div>
 
         {/* Three Pillars */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto px-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto ">
           <div className="group p-6 md:p-8 rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10">
             <div className="flex items-center gap-3 mb-3 md:mb-4">
               <Brain className="w-6 h-6 md:w-8 md:h-8 text-accent" />

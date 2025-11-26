@@ -16,7 +16,7 @@ const WhatsIncluded = () => {
 
   return (
     <section
-      className="py-20 md:py-24 px-4 relative"
+      className="py-20 md:py-24 px-1 relative"
       style={{ background: "var(--gradient-included)" }}
     >
       <div className="container mx-auto max-w-6xl">

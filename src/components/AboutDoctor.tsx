@@ -2,7 +2,7 @@ import drSantiago from "@/assets/dr-santiago.png";
 
 const AboutDoctor = () => {
   return (
-    <section className="py-16 md:py-24 px-4 relative" style={{ background: 'var(--gradient-doctor)' }}>
+    <section className="py-16 md:py-24 px-1 relative" style={{ background: 'var(--gradient-doctor)' }}>
       <div className="container mx-auto max-w-6xl">
         
         {/* Título */}
