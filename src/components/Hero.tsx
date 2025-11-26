@@ -48,7 +48,7 @@ const Hero = () => {
             size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 md:px-12 md:py-6 text-base md:text-lg rounded-full font-semibold shadow-lg hover:shadow-accent/50 transition-all duration-300 animate-glow"
           >
-            Quero Me Tornar um Homem Melhor
+            Quero Me Tornar uma pessoa melhor
           </Button>
         </div>
 
