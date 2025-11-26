@@ -14,13 +14,18 @@ const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
       <RouterNavLink
         ref={ref}
         to={to}
-        className={({ isActive, isPending }) =>
-          cn(className, isActive && activeClassName, isPending && pendingClassName)
-        }
         {...props}
+        className={({ isActive, isPending }) =>
+          cn(
+            "transition-colors duration-200", // deixa responsivo a hover/touch
+            className,
+            isActive && activeClassName,
+            isPending && pendingClassName,
+          )
+        }
       />
     );
-  },
+  }
 );
 
 NavLink.displayName = "NavLink";

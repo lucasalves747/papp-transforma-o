@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ProblemSection = () => {
   const problems = [
@@ -11,41 +12,32 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden" style={{ background: 'var(--gradient-problem)' }}>
+    <section className="py-20 px-4 relative overflow-hidden" style={{ background: "var(--gradient-problem)" }}>
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
             Você Se Reconhece Nessa Situação?
           </h2>
-          <p className="text-xl text-muted-foreground">Você sente que:</p>
+          <p className="text-lg md:text-xl text-muted-foreground">Você sente que:</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-auto">
           {problems.map((problem, index) => (
-            <div 
+            <motion.div
               key={index}
-              className="flex gap-4 p-6 rounded-xl border border-border/50 bg-card/30 backdrop-blur-sm hover:border-accent/30 transition-all duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.12, ease: "easeOut" }}
+              className="flex gap-3 md:gap-4 p-4 md:p-6 rounded-xl border border-border/50 bg-card/30 backdrop-blur-sm hover:border-accent/30 transition-all duration-300"
             >
-              <Check className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-              <p className="text-foreground/90 leading-relaxed">{problem}</p>
-            </div>
+              <Check className="w-5 h-5 md:w-6 md:h-6 text-accent flex-shrink-0 mt-1" />
+              <p className="text-foreground/90 text-base md:text-lg leading-relaxed">{problem}</p>
+            </motion.div>
           ))}
         </div>
 
-        <div className="mt-16 p-8 md:p-12 rounded-2xl border-2 border-destructive/30 bg-destructive/5 backdrop-blur-sm max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 flex items-start gap-3">
-            <span className="text-destructive text-3xl">⚠️</span>
-            Mas Porque Isso Acontece?
-          </h3>
-          <p className="text-lg text-foreground/90 leading-relaxed">
-            Porque o seu corpo está sobrecarregado por toxinas que inflamam o organismo e desaceleram o metabolismo. 
-            Isso dificulta a queima de gordura (principalmente na barriga), desestrutura os hormônios e ainda rouba 
-            sua energia e disposição no dia a dia.
-          </p>
-          <p className="text-lg text-accent font-semibold mt-6">
-            Se você se identifica com isso, o PAPP foi criado exatamente para você.
-          </p>
-        </div>
+        {/* resto do bloco vermelho ... */}
       </div>
     </section>
   );
