@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Main Headline */}
         <div className="text-center mb-10 md:mb-12 space-y-4 md:space-y-6">
-          <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="block text-foreground mb-2 md:mb-4">
               Recupere Seu Corpo.
             </span>
